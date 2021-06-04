@@ -18,7 +18,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -48,12 +47,36 @@ table {
 }
 
 * {
-    box-sizing: border-box;
+    
 }
 
 html, body {
-    height: 100%;
+    min-height: 100%;
     font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display:flex;
+    justify-content:start;
+    align-items:flex-end;
+    padding:2% 0;
+}
+.logo{
+    margin:0 0 0 0;
+}
+
+nav{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+}
+nav a{
+    text-decoration:none;
+    color:black;
+}
+
+.jumbo{
+    margin:2% 0
 }
 
 h1, h2, h3, h4, h5 {
@@ -88,11 +111,49 @@ p {
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    padding:2% 0;
+}
+
+#top-content-about{
+    border-bottom: 1px dashed black;
+    padding:2% 0;
+}
+.middle-content.about .text-container{
+    width:47%;
+    height:30vw;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:flex-start;
+    
+}
+.middle-content.about{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    border-bottom:none;
+}
+.middle-content.about .text-container{
+    border-bottom: 1px dashed black;
+    padding:2% 0;
 }
 
 .middle-content h2 {
-    padding: 0 2%;
+    padding: 0 1%;
     margin-bottom: 0;
+}
+.middle-content.about h2{
+    width:100%;
+    padding:0;
+}
+.middle-content.about p{
+    width:100%;
+}
+button{
+    padding:2% 5%;
+    background:white;
+    border: 2px black solid;
+    border-radius:10px;
 }
 
 .middle-content .boxes {
@@ -104,7 +165,6 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -112,37 +172,49 @@ p {
     justify-content: center;
 }
 /*box colors*/
-.middle-content .boxes .box.1{
 
+#box1{
+    background:teal;
 }
-.middle-content .boxes .box.2{
+#box2{
+    background:gold;
+}
+#box3{
+    background:cadetblue;
+}
+#box4{
+    background:coral;
+}
+#box5{
+    background:crimson;
+}
+#box6{
+    background:forestgreen;
+}
+#box7{
+    background:darkorchid;
+}
+#box8{
+    background:hotpink;
+}
+#box9{
+    background:indigo;
+}
+#box10{
+    background:dodgerblue;
+}
 
-}
-.middle-content .boxes .box.3{
 
-}
-.middle-content .boxes .box.4{
-
-}
-.middle-content .boxes .box.5{
-
-}
-.middle-content .boxes .box.6{
-
-}
-.middle-content .boxes .box.7{
-
-}
-.middle-content .boxes .box.8{
-
-}
 
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
-
+#bottom-about{
+    display:flex;
+    flex-direction:column;
+}
 .bottom-content .text-container {
     padding-right: 4%;
 }
